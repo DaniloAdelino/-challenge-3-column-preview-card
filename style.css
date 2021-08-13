@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: hsl(0, 0%, 95%);
+}
+.main-flexbox {
+    display: flex;
+    width: 62%;
+    height: 460px;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+.main-flexbox > div {
+    padding: 5% 5%;
+    align-items: top;
+}
+.main-flexbox > div > h1 {
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.918);
+    font-size: 2.1em;
+}
+.main-flexbox > div > p {
+    margin-top: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: hsla(0, 0%, 98%, 0.76);
+    text-align: left;
+    margin-bottom: 3em;
+    line-height: 1.8em;
+}
+.learn-more > a{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    color: hsla(0, 0%, 98%, 0.856);
+    text-decoration: none;
+    border: solid hsla(0, 0%, 100%, 0.918);
+    padding: 0.8em 1.4em;
+    border-width: 2px;
+    border-radius: 30px;
+}
+.sedans  a:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.suvs  a:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.luxury a:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.sedans {
+    background: hsl(31, 77%, 52%);
+    display: grid;
+    padding: 2%;
+    border-radius: 10px 0 0 10px;
+}
+.suvs {
+    background: hsl(184, 100%, 22%);
+    display: grid;
+}
+.luxury {
+    background: hsl(179, 100%, 13%);
+    display: grid;
+    border-radius: 0 10px 10px 0;
+}
+@media (max-width: 375px){
+    html, body { margin:0; height: 142%;}
+
+    .main-flexbox {
+        display: grid;
+        width: 80%;
+    }
+    .main-flexbox > div {
+        padding: 15% 15%;
+        align-items: top;
+        grid-gap: 30px;
+    }
+    .main-flexbox > div > p {
+        margin: 0;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
