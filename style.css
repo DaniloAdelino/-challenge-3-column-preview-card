@@ -74,7 +74,7 @@ body {
     display: grid;
     border-radius: 0 10px 10px 0;
 }
-@media (max-width: 375px){
+@media (max-width: 760px){
     html, body { margin:0; height: 142%;}
 
     .main-flexbox {
